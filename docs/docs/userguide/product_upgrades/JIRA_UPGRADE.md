@@ -1,6 +1,6 @@
 # Jira rolling upgrade
-Let's say we have Jira version `8.13.0` deployed to our Kubernetes cluster, and we want to upgrade it to version
-`8.13.1`, which we'll call the *target version*. You can substitute the target version for the one you need, as long as
+Let's say we have Jira version `8.19.0` deployed to our Kubernetes cluster, and we want to upgrade it to version
+`8.19.1`, which we'll call the *target version*. You can substitute the target version for the one you need, as long as
 it's newer than the current one.
 
 ## 1. Find tag of the target image
@@ -8,7 +8,7 @@ it's newer than the current one.
 Go to [atlassian/jira-software](https://hub.docker.com/r/atlassian/jira-software/tags){.external}
 Docker Hub page to pick a tag that matches your target version.
 
-In the example we're running Jira using the `8.13.0-jdk11` tag, and we'll be upgrading to `8.13.1-jdk11` - our *target*.
+In the example we're running Jira using the `8.19.0-jdk11` tag, and we'll be upgrading to `8.19.1-jdk11` - our *target*.
 
 ## 2. Put Jira into upgrade mode
 
